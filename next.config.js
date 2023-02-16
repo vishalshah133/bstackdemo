@@ -42,14 +42,11 @@ const nextConfiguration = {
     );
     return config;
   },
+  basePath: '/bstackdemo',
+  assetPrefix: '/bstackdemo'
 };
 
 module.exports = withPlugins([
   [withStyles, sassConfig],
   [optimizedImages, optimizedImagesConfig],
 ], nextConfiguration);
-
-module.exports = {
-  basePath: '/bstackdemo',
-  assetPrefix: '/bstackdemo'
-}
